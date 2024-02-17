@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: End-To-End-ML-Project
+Version: 0.0.1
+Summary: A small python package for ml app
+Home-page: https://github.com/dharmikkuma/End-To-End-ML-Project
+Author: dharmikkuma
+Author-email: dharmikanghan1996@gmail.com
+Project-URL: Bug Tracker, https://github.com/dharmikkuma/End-To-End-ML-Project/issues
+License-File: LICENSE
