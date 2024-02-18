@@ -1,10 +1,10 @@
-[2024-02-18 19:35:54,954: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
-[2024-02-18 19:35:54,954: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-02-18 19:35:54,954: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-02-18 19:35:54,954: INFO: common: yaml file: schema.yaml loaded successfully]
-[2024-02-18 19:35:54,954: INFO: common: created directory at: artifacts]
-[2024-02-18 19:35:54,964: INFO: common: created directory at: artifacts/data_ingestion]
-[2024-02-18 19:35:56,353: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+[2024-02-18 20:13:35,071: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-18 20:13:35,116: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-18 20:13:35,183: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-18 20:13:35,190: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-18 20:13:35,193: INFO: common: created directory at: artifacts]
+[2024-02-18 20:13:35,193: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-18 20:13:37,955: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
 Connection: close
 Content-Length: 26148
 Cache-Control: max-age=300
@@ -17,21 +17,50 @@ X-Frame-Options: deny
 X-XSS-Protection: 1; mode=block
 X-GitHub-Request-Id: 7D8A:1E8739:120DBC9:12F2D81:65D2424C
 Accept-Ranges: bytes
-Date: Sun, 18 Feb 2024 18:35:55 GMT
+Date: Sun, 18 Feb 2024 19:13:37 GMT
 Via: 1.1 varnish
 X-Served-By: cache-fra-eddf8230124-FRA
 X-Cache: HIT
 X-Cache-Hits: 1
-X-Timer: S1708281355.434073,VS0,VE136
+X-Timer: S1708283617.052161,VS0,VE146
 Vary: Authorization,Accept-Encoding,Origin
 Access-Control-Allow-Origin: *
 Cross-Origin-Resource-Policy: cross-origin
-X-Fastly-Request-ID: 54091012aac45c1c1aee0b4bfc77898e351b22a0
-Expires: Sun, 18 Feb 2024 18:40:55 GMT
+X-Fastly-Request-ID: 65e7717e9c9b3c424e29e88b7de0438b1cee8e34
+Expires: Sun, 18 Feb 2024 19:18:37 GMT
 Source-Age: 0
 
 ]
-[2024-02-18 19:35:56,390: INFO: data_ingestion: artifacts/data_ingestion/data.zip extracted!]
-[2024-02-18 19:35:56,390: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+[2024-02-18 20:13:38,308: INFO: data_ingestion: artifacts/data_ingestion/data.zip extracted!]
+[2024-02-18 20:13:38,316: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
-x==========x]
+x========================================x]
+[2024-02-18 20:13:38,318: INFO: main: 
+
+
+
+
+
+]
+[2024-02-18 20:13:38,319: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-02-18 20:13:38,325: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-18 20:13:38,327: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-18 20:13:38,330: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-18 20:13:38,331: INFO: common: created directory at: artifacts]
+[2024-02-18 20:13:38,332: INFO: common: created directory at: artifacts/data_validation]
+[2024-02-18 20:13:38,368: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x=======================================x]
+[2024-02-18 20:13:38,382: INFO: main: 
+
+
+
+
+
+]
+[2024-02-18 20:13:38,384: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2024-02-18 20:13:38,385: ERROR: main: name 'ModelEvaluationTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "F:\End-to-End ML Project\Project\End-To-End-ML-Project\main.py", line 65, in <module>
+    data_ingestion = ModelEvaluationTrainingPipeline()
+NameError: name 'ModelEvaluationTrainingPipeline' is not defined
